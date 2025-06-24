@@ -2,6 +2,7 @@ echo off
 
 REM compilerVersion="SEGGER Embedded Studio for ARM 3.40"
 REM SET compilerVersion="SEGGER Embedded Studio for ARM 3.34b"
+REM SET compilerVersion="SEGGER Embedded Studio for ARM 7.32a"
 SET compilerVersion="SEGGER Embedded Studio for ARM 4.30a"
 SET build=Release
 SET compileDir=Release

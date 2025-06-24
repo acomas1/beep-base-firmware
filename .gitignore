@@ -1127,3 +1127,5 @@ Source_V1.5.13/Code/nRF/PRJ/ses/Output/Release/Obj/BeepBase/uart.o
 Source_V1.5.13/Code/nRF/PRJ/ses/Output/Release/Obj/BeepBase/utilities.d
 Source_V1.5.13/Code/nRF/PRJ/ses/Output/Release/Obj/BeepBase/utilities.o
 Source_V1.5.13/Code/nRF/PRJ/ses/signal-desktop-keyring.gpg
+
+.fake

@@ -48,7 +48,10 @@
  */
 #define LORAWAN_ADR_ON                              true
 
-#if defined( REGION_EU868 ) || defined( REGION_RU864 ) || defined( REGION_CN779 ) || defined( REGION_EU433 )
+/*
+#if defined( REGION_US915 ) || defined( REGION_RU864 ) || defined( REGION_CN779 ) || defined( REGION_EU433 )
+*/
+#if defined( REGION_US915 ) 
 
 #include "LoRaMacTest.h"
 

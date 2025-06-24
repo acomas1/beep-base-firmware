@@ -3,6 +3,7 @@ echo off
 REM compilerVersion="SEGGER Embedded Studio for ARM 3.40"
 REM SET compilerVersion="SEGGER Embedded Studio for ARM 3.34b"
 SET compilerVersion="SEGGER Embedded Studio for ARM 4.30a"
+REM SET compilerVersion="SEGGER Embedded Studio for ARM 7.32a"
 SET build=%1
 SET compileDir=%2
 if exist "../../PRJ/ses/Output"		RMDIR /S /Q "../../PRJ/ses/Output"
@@ -26,6 +27,9 @@ echo Clean-up complete, compiling release version: %build% in folder %compileDir
 
 
 start /B /wait ../nrfutil.exe version
+
+start /B /wait ../mergehex.exe --version
+
 
 start /B /wait C:/"Program Files"/SEGGER/%compilerVersion%/bin/emBuild.exe -config "%build%" ../../PRJ/ses/Beepbase.emProject
 if %ERRORLEVEL% NEQ 0 (
@@ -94,7 +98,6 @@ if %ERRORLEVEL% NEQ 0 (
 	exit
 )
 
-del /F "%compileDir%\BL_settings.hex"
 del /F "%compileDir%\BTLDR_settings.hex"
 del /F "%compileDir%\APP_SD.hex"
 del /F "%compileDir%\APP_SD_BL.hex"

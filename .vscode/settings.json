@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "lorawan_imp.h": "c",
+        "loramac.h": "c"
+    }
+}
